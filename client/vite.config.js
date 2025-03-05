@@ -15,7 +15,8 @@ export default defineConfig({
         description: 'App to track your nutrition and weight',  
         theme_color: '#ffffff', 
         background_color: '#ffffff',
-        start_url: '/',
+        id:'/diet',
+        start_url: '/diet',
         icons: [
           {  
             src: 'pwa-192x192.png',  
@@ -181,7 +182,7 @@ export default defineConfig({
           globPatterns: ['**/*.{js,css,html,png,jpg,svg}'],
           runtimeCaching: [
             {
-              urlPattern: ({ url }) => url.pathname.startsWith('/diet'),
+              urlPattern: ({ url }) => url.pathname.startsWith('/'),
               handler: 'NetworkFirst',
               options: {
                 cacheName: 'api-cache',
