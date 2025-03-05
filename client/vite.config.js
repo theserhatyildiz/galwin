@@ -181,7 +181,7 @@ export default defineConfig({
           globPatterns: ['**/*.{js,css,html,png,jpg,svg}'],
           runtimeCaching: [
             {
-              urlPattern: ({ url }) => url.pathname.startsWith('/'),
+              urlPattern: ({ url }) => url.pathname.startsWith('/diet'),
               handler: 'NetworkFirst',
               options: {
                 cacheName: 'api-cache',
